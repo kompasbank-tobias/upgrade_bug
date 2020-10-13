@@ -1,7 +1,7 @@
 import * as cdk from '@aws-cdk/core';
 import * as lambda from '@aws-cdk/aws-lambda';
 import * as path from "path";
-import {Myconstruct} from "../../myconstruct/lib";
+import {Myconstruct} from "myconstruct";
 
 export class MyappStack extends cdk.Stack {
     constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
@@ -13,6 +13,6 @@ export class MyappStack extends cdk.Stack {
             runtime: lambda.Runtime.NODEJS_12_X,
         });
 
-        new Myconstruct(this, 'ExternalFunction')
+        new Myconstruct(this, 'ExternalFunction');
     }
 }
