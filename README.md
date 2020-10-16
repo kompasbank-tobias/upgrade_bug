@@ -2,9 +2,8 @@
 ## Run
 ```
 npx lerna bootstrap
-npx lerna exec npm run build
-cd packages/myapp
-npx cdk synth
+npx lerna run build
+npx lerna run test
 ```
 ## Output
 ```
