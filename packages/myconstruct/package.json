@@ -11,14 +11,16 @@
   "devDependencies": {
     "@aws-cdk/assert": "1.70.0",
     "@aws-cdk/aws-lambda": "1.70.0",
-    "@types/jest": "^26.0.10",
-    "@types/node": "10.17.27",
+    "@types/jest": "^26.0.15",
+    "@types/node": "12.19.1",
     "jest": "^26.4.2",
-    "ts-jest": "^26.2.0",
-    "typescript": "~3.9.7"
-  },
-  "peerDependencies": {
-    "@aws-cdk/core": "1.70.0"
+    "ts-jest": "^26.4.2",
+    "typescript": "~3.9.7",
+
+    "ts-node": "^9.0.0",
+    "canvas": "^2.6.1",
+    "bufferutil": "^4.0.1",
+    "utf-8-validate": "^5.0.2"
   },
   "dependencies": {
     "@aws-cdk/core": "1.70.0"
