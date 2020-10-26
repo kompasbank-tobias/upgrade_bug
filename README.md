@@ -1,9 +1,8 @@
 # Reproduce bug
 ## Run
 ```
-npx lerna bootstrap
-npx lerna run build
-npx lerna run test
+npx @microsoft/rush update
+cd packages/myapp && npm run test
 ```
 ## Output
 ```

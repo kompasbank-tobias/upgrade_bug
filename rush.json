@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "rushVersion": "5.34.4",
+  "npmVersion": "4.5.0",
+  "nodeSupportedVersionRange": ">=14.2.0 <15.0.0",
+  "ensureConsistentVersions": true,
+  "repository": {
+    "url": "https://github.com/gwriss/upgrade_bug"
+  },
+  "telemetryEnabled": false,
+  "projects": [
+    {
+      "packageName": "myconstruct",
+      "projectFolder": "packages/myconstruct",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "myapp",
+      "projectFolder": "packages/myapp",
+      "shouldPublish": false
+    }
+  ]
+}
