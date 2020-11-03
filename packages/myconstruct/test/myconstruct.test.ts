@@ -1,4 +1,4 @@
-import { expect as expectCDK, countResources } from '@aws-cdk/assert';
+import { expect as expectCDK, countResources, SynthUtils } from '@aws-cdk/assert';
 import * as cdk from '@aws-cdk/core';
 import * as Myconstruct from '../lib/index';
 
@@ -11,5 +11,7 @@ test('SNS Topic Created', () => {
   // WHEN
   new Myconstruct.Myconstruct(stack, 'MyTestConstruct');
   // THEN
-  expectCDK(stack).to(countResources("AWS::SNS::Topic",0));
+  expectCDK(stack).to(countResources("AWS::SNS::Topic", 0));
+
+  console.log(SynthUtils.toCloudFormation(stack))
 });
